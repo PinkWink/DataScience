@@ -33,8 +33,7 @@
 
 ### 3장 시카고 샌드위치 맛집 분석
 * 오타 수정
-	* P125, 밑에서 두 번째 줄,
-		* 02. test_first.html --> **03. test_first.html**
+	* P125, 밑에서 두 번째 줄, 02. test_first.html --> **03. test_first.html**
 
 ### 4장 셀프 주유소는 정말 저렴할까
 
