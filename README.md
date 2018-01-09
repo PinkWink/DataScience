@@ -20,9 +20,11 @@
 * 집필 후 모듈의 업데이터 및 데이터의 취득 방법이나 그 내용이 변경된 경우에 대해서만 정리합니다.
 
 ### 1장 서울시 구별 CCTV 현황 분석
+* 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/01.%20Basic%20of%20Python%2C%20Pandas%20and%20Matplotlib%20%20via%20analysis%20of%20CCTV%20in%20Seoul.ipynb)**
 * 현재 발견된 수정사항 없음
 
 ### 2장 서울시 범죄 현황 분석
+* 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/02.%20Analysis%20for%20crime%20in%20Seoul.ipynb)**
 * 교재 대비 데이터나 환경이 변경된 사항
 	* 교재에서 접근하는 방식으로 데이터를 얻으로 가면 교재 집필하던 때와 데이터의 형식이 변경되어 있습니다.
 	* 지금은 데이터를 얻는 것이 실제 데이터라는 것에 대한 증명일 뿐이므로, 해당 데이터를 Github에서 배포하는 데이터를 다운받는 것으로 합니다.
@@ -32,6 +34,7 @@
 	* Folium이 0.4.0으로 판올림 되면서 circle marker 적용할때, fill=True 옵션을 반듯이 사용해야 합니다. (소스코드에 모두 반영)
 
 ### 3장 시카고 샌드위치 맛집 분석
+* 소스코드 : **[바로가기1](https://github.com/PinkWink/DataScience/blob/master/source_code/03-1.%20Web%20Parsing%20example.ipynb)**, **[바로가기2](https://github.com/PinkWink/DataScience/blob/master/source_code/03-2.%20Naver%20Movie%20Rank.ipynb)***
 * 오타 수정
 	* P125, 밑에서 두 번째 줄, 02. test_first.html --> **03. test_first.html**
 * 교재 대비 코드가 변경된 사항
@@ -39,6 +42,7 @@
 	* Folium이 0.4.0으로 판올림 되면서 circle marker 적용할때, fill=True 옵션을 반듯이 사용해야 합니다. (소스코드에 모두 반영)
 
 ### 4장 셀프 주유소는 정말 저렴할까
+* 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/04.%20Self%20Oil%20Station%20price.ipynb)**
 * 오타 수정
 	* P198, 대체로 '중구','중랑구'에 비싼 주유소가 몰려 있고, --> **대체로 '중구','종로구'에 비싼 주유소가 몰려 있고**
 * 내용 수정
@@ -50,10 +54,12 @@
 	* Folium이 0.4.0으로 판올림 되면서 circle marker 적용할때, fill=True 옵션을 반듯이 사용해야 합니다. (소스코드에 모두 반영)
 
 ### 5장 우리나라 인구 소멸 위기 지역 분석
+* 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/05.%20population%20using%20Korea%20Map.ipynb)**
 * 교재 대비 코드가 변경된 사항
 	* Folium이 0.4.0으로 판올림 되면서 choropleth 명령에서 geo_str 옵션명이 geo_data 옵션명으로 변경되었습니다.. (소스코드에 모두 반영)
 
 ### 6장 19대 대선 결과 분석
+* 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/06.%20Election%20Result.ipynb)**
 * 내용수정
 	* 6장은 아주 큰 변화가 있습니다. 바로 분석 대상이 되는 선거관리위원회 홈페이지가 변경된 것입니다.
 	* 그래서 6장의 1절과 2절은 그 내용이 아주 많이 바뀌어야 합니다.
@@ -65,12 +71,14 @@
 	* Folium이 0.4.0으로 판올림 되면서 choropleth 명령에서 geo_str 옵션명이 geo_data 옵션명으로 변경되었습니다.. (소스코드에 모두 반영)
 
 ### 7장 시계열 데이터를 다뤄보자
+* 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/07.%20Time%20Series%20Data%20Handle.ipynb)**
 * 내용수정
 	* 7-3절에서 pandas에서 구글(google)에서 주식데이터를 가져오는데 최근 버전업 이후 이 명령이 동작하지 않습니다.
 	* 그래서 yahoo에서 주식데이터를 가져오도록 수정되었습니다.
 	* 일부 **daily_seasonality=True**와 같이 **Prophet** 명령을 사용할때 옵션이 교재와 달리 추가된 곳이 있습니다. 소스코드를 확인해 주세요.
 
 ### 8장 자연어 처리 시작하기
+* 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/08.%20Natural%20Language%20Processing.ipynb)**
 * 모듈 설치
 	* KoNLPy : **pip install konlpy**
 	* JPype1 : **conda install -c conda-forge jpype1**
