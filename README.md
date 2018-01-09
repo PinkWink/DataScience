@@ -71,3 +71,14 @@
 	* 일부 **daily_seasonality=True**와 같이 **Prophet** 명령을 사용할때 옵션이 교재와 달리 추가된 곳이 있습니다. 소스코드를 확인해 주세요.
 
 ### 8장 자연어 처리 시작하기
+* 모듈 설치
+	* KoNLPy : **pip install konlpy**
+	* JPype1 : **conda install -c conda-forge jpype1**
+		* 이후 Jupyter Notebook 재실행 필요
+	* JDK 설치 : Java JDK로 검색해서 OS에 맞춰 설치
+   		* JAVA_HOME 설정 : 교재내용 참조 
+   	* * WordCloud 설치 : **conda install -c conda-forge wordcloud**
+	* gensim install : **conda install -c anaconda gensim**
+* 내용수정
+	* P335에 있는 In125, In128 두 명령은 현 시점의 네이버 검색결과가 달라서 실행되지 않습니다.
+	* 적절한 단어를 따로 찾아보셔도 좋습니다.
