@@ -77,7 +77,7 @@
 		* 이후 Jupyter Notebook 재실행 필요
 	* JDK 설치 : Java JDK로 검색해서 OS에 맞춰 설치
    		* JAVA_HOME 설정 : 교재내용 참조 
-   	* * WordCloud 설치 : **conda install -c conda-forge wordcloud**
+   	* WordCloud 설치 : **conda install -c conda-forge wordcloud**
 	* gensim install : **conda install -c anaconda gensim**
 * 내용수정
 	* P335에 있는 In125, In128 두 명령은 현 시점의 네이버 검색결과가 달라서 실행되지 않습니다.
