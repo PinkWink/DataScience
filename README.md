@@ -21,7 +21,8 @@
 
 ### 1장 서울시 구별 CCTV 현황 분석
 * 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/01.%20Basic%20of%20Python%2C%20Pandas%20and%20Matplotlib%20%20via%20analysis%20of%20CCTV%20in%20Seoul.ipynb)**
-* 현재 발견된 수정사항 없음
+* 오타 수정
+	* P38, In[40] df2['E'].isIn(['two','four']) --> **In[40] df2['E'].isin(['two','four'])**
 
 ### 2장 서울시 범죄 현황 분석
 * 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/02.%20Analysis%20for%20crime%20in%20Seoul.ipynb)**
@@ -85,8 +86,8 @@
 		* 이후 Jupyter Notebook 재실행 필요
 	* JDK 설치 : Java JDK로 검색해서 OS에 맞춰 설치
    		* JAVA_HOME 설정 : 교재내용 참조 
-   	* WordCloud 설치 : **conda install -c conda-forge wordcloud**
-	* gensim install : **conda install -c anaconda gensim**
+   	* WordCloud 설치 : **pip install wordcloud**
+	* gensim install : **pip install gensim**
 * 내용수정
 	* P335에 있는 In125, In128 두 명령은 현 시점의 네이버 검색결과가 달라서 실행되지 않습니다.
 	* 적절한 단어를 따로 찾아보셔도 좋습니다.
