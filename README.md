@@ -22,10 +22,14 @@
 ### 1장 서울시 구별 CCTV 현황 분석
 * 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/01.%20Basic%20of%20Python%2C%20Pandas%20and%20Matplotlib%20%20via%20analysis%20of%20CCTV%20in%20Seoul.ipynb)**
 * 오타 수정
-	* P38, In[40] df2['E'].isIn(['two','four']) --> **In[40] df2['E'].isin(['two','four'])**
+	* P38, In[40] df2['E'].isIn(['two','four']) --> **In[40] df2['E'].isin(['two','four'])** (focussjh님 감사합니다.)
 
 ### 2장 서울시 범죄 현황 분석
 * 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/02.%20Analysis%20for%20crime%20in%20Seoul.ipynb)**
+
+* 오타 수정
+	* P86, In [13] crime_anal_police.loc[crime_anal_police['관서명']=='금천서', ['구별']] = '금천서' --> **crime_anal_police.loc[crime_anal_police['관서명']=='금천서', ['구별']] = '금천구'** (grabchance님 감사합니다.)
+
 * 교재 대비 데이터나 환경이 변경된 사항
 	* 교재에서 접근하는 방식으로 데이터를 얻으로 가면 교재 집필하던 때와 데이터의 형식이 변경되어 있습니다.
 	* 지금은 데이터를 얻는 것이 실제 데이터라는 것에 대한 증명일 뿐이므로, 해당 데이터를 Github에서 배포하는 데이터를 다운받는 것으로 합니다.
