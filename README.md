@@ -98,7 +98,17 @@
 ### 7장 시계열 데이터를 다뤄보자
 * 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/07.%20Time%20Series%20Data%20Handle.ipynb)**
 
-
+* 교재 오류 수정
+	* p276의 마지막 코드인 In[19]를 실행한 후 교재에는 없지만, 아래 코드를 실행해야 합니다.
+		
+		<pre><code>forecast = m.predict(future) 
+		forecast[['ds', 'yhat', 'yhat_lower', 'yhat_upper']].tail() 
+		</pre></code>
+		
+		* 위 코드는 Github의 7장 소스코드에는 배포되어 있지만, 저자가 출판사에 전달하는 과정에서 누락된 듯 합니다.
+		* 본의 아니게 누를 끼쳐 독자 여러분과 관계자분들꼐 죄송합니다.
+		* 그리고, 이를 알려주신 **s199414**님께도 감사드립니다. 없는 것을 없다고 알려주는 것이 엄청 귀찮은 일인데 정말 감사드립니다.
+	
 * 내용수정
 	* 7-3절에서 pandas에서 구글(google)에서 주식데이터를 가져오는데 최근 버전업 이후 이 명령이 동작하지 않습니다.
 	* 그래서 yahoo에서 주식데이터를 가져오도록 수정되었습니다.
