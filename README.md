@@ -101,7 +101,7 @@
 * 교재 오류 수정
 	* p276의 마지막 코드인 In[19]를 실행한 후 교재에는 없지만, 아래 코드를 실행해야 합니다.
 		
-		<pre><code>forecast = m.predict(future)<br />forecast[['ds', 'yhat', 'yhat_lower', 'yhat_upper']].tail()</pre></code>
+		<pre><code>forecast = m.predict(future)<br /><br />forecast[['ds', 'yhat', 'yhat_lower', 'yhat_upper']].tail()</pre></code>
 		
 		* 위 코드는 Github의 7장 소스코드에는 배포되어 있지만, 저자가 출판사에 전달하는 과정에서 누락된 듯 합니다.
 		* 본의 아니게 누를 끼쳐 독자 여러분과 관계자분들꼐 죄송합니다.
