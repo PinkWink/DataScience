@@ -25,6 +25,7 @@
 
 * 오타 수정
 	* P38, In[40] df2['E'].isIn(['two','four']) --> **In[40] df2['E'].isin(['two','four'])** (focussjh님 감사합니다.)
+	* P40, In[44] x.mIn() --> **x.min()** (buillee님 감사합니다.)
 
 ### 2장 서울시 범죄 현황 분석
 * 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/02.%20Analysis%20for%20crime%20in%20Seoul.ipynb)**
