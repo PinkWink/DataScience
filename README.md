@@ -31,6 +31,7 @@
 * 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/02.%20Analysis%20for%20crime%20in%20Seoul.ipynb)**
 
 * 오타 수정
+	* P83, In[7]의 마지막 print문이 앞으로 들여쓰기가 되어야 합니다. 단, for문안에는 있어야 하구요. github 소스를 확인해 주세요. (pitbulls님 감사합니다.)
 	* P86, In [13] crime_anal_police.loc[crime_anal_police['관서명']=='금천서', ['구별']] = '금천서' --> **crime_anal_police.loc[crime_anal_police['관서명']=='금천서', ['구별']] = '금천구'** (grabchance님 감사합니다.)
 
 * 교재 대비 데이터나 환경이 변경된 사항
@@ -49,7 +50,7 @@
 
 * 오타 수정
 	* P125, 밑에서 두 번째 줄, 02. test_first.html --> **03. test_first.html**
-
+	* P159의 In[2]에 page = url_base+url_sub --> **page = urlopen(url_base+url_syb)**로 변경되어야 합니다. (buillee님 감사합니다.)
 	
 * 교재 대비 코드가 변경된 사항
 	* Folium이 0.4.0으로 판올림 되면서 choropleth 명령에서 geo_str 옵션명이 geo_data 옵션명으로 변경되었습니다.. (소스코드에 모두 반영)
