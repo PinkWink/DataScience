@@ -50,7 +50,7 @@
 
 * 오타 수정
 	* P125, 밑에서 두 번째 줄, 02. test_first.html --> **03. test_first.html**
-	* P159의 In[2]에 page = url_base+url_sub --> **page = urlopen(url_base+url_syb)**로 변경되어야 합니다. (buillee님 감사합니다.)
+	* P159의 In[2]에 page = url_base+url_sub --> **page = urlopen(url_base+url_syb)** 로 변경되어야 합니다. (buillee님 감사합니다.)
 	
 * 교재 대비 코드가 변경된 사항
 	* Folium이 0.4.0으로 판올림 되면서 choropleth 명령에서 geo_str 옵션명이 geo_data 옵션명으로 변경되었습니다.. (소스코드에 모두 반영)
