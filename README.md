@@ -61,7 +61,7 @@
 
 
 * 오타 수정
-	* P178, webdriver.Chrome('../drvier/chromedriver')에서 윈도우 유저들께서는 chromedriver.exe로 맥 유저들은 그대로 chromedriver로 하시면 됩니다.
+	* P178, webdriver.Chrome('../drvier/chromedriver')에서 윈도우 유저들께서는 chromedriver.exe로 맥 유저들은 그대로 chromedriver로 하시면 됩니다. (pitbulls님 감사합니다.)
 	* P198, 대체로 '중구','중랑구'에 비싼 주유소가 몰려 있고, --> **대체로 '중구','종로구'에 비싼 주유소가 몰려 있고**
 
 	
