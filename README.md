@@ -51,6 +51,35 @@
 * 오타 수정
 	* P125, 밑에서 두 번째 줄, 02. test_first.html --> **03. test_first.html**
 	* P159의 In[2]에 page = url_base+url_sub --> **page = urlopen(url_base+url_syb)** 로 변경되어야 합니다. (buillee님 감사합니다.)
+
+* 교재 오류 수정
+	* P157 In[72]와 In[74] 사이에 df['lng'], df['lat']를 계산하는 코드가 교재에서 빠져있습니다. 소스코드를 참조해 주세요. 누락된 코드는 아래와 같습니다. (**이경재**님 감사합니다.)
+	
+	``` python
+	lat = []
+	lng = []
+
+	for n in tqdm_notebook(df.index):
+    	if df['Address'][n] != 'Multiple':
+        	target_name = df['Address'][n]+', '+'Cicago'
+        	gmaps_output = gmaps.geocode(target_name)
+        	location_output = gmaps_output[0].get('geometry')
+        	lat.append(location_output['location']['lat'])
+        	lng.append(location_output['location']['lng'])
+        
+    	else:
+        	lat.append(np.nan)
+        	lng.append(np.nan)
+	```
+	* P161, In[15] 코드를 실행한 후 movie.info()로 관찰해보면 데이터들이 숫자형이 아님을 알 수 있습니다. 그래서 아래 코드를 추가해서 숫자형으로 변경시켜 주어야 합니다. (**이경재**님 감사합니다.)
+
+	``` python
+	import numpy as np
+
+	movie_unique = pd.pivot_table(movie, index=['name'], aggfunc=np.sum)
+	movie_best = movie_unique.sort_values(by='point', 	ascending=False)
+	movie_best.head()
+	```
 	
 * 교재 대비 코드가 변경된 사항
 	* Folium이 0.4.0으로 판올림 되면서 choropleth 명령에서 geo_str 옵션명이 geo_data 옵션명으로 변경되었습니다.. (소스코드에 모두 반영)
