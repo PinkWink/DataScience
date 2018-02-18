@@ -79,11 +79,7 @@
 	* P161, In[15] 코드를 실행한 후 movie.info()로 관찰해보면 데이터들이 숫자형이 아님을 알 수 있습니다. 그래서 아래 코드를 추가해서 숫자형으로 변경시켜 주어야 합니다. (**이경재**님 감사합니다.)
 
 	``` python
-	import numpy as np
-
-	movie_unique = pd.pivot_table(movie, index=['name'], aggfunc=np.sum)
-	movie_best = movie_unique.sort_values(by='point', 	ascending=False)
-	movie_best.head()
+	movie['point'] = movie['point'].astype(float)
 	```
 	
 * 교재 대비 코드가 변경된 사항
