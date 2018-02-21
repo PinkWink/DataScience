@@ -60,16 +60,16 @@
 	lng = []
 
 	for n in tqdm_notebook(df.index):
-    	if df['Address'][n] != 'Multiple':
-        	target_name = df['Address'][n]+', '+'Cicago'
-        	gmaps_output = gmaps.geocode(target_name)
-        	location_output = gmaps_output[0].get('geometry')
-        	lat.append(location_output['location']['lat'])
-        	lng.append(location_output['location']['lng'])
+       if df['Address'][n] != 'Multiple':
+           target_name = df['Address'][n]+', '+'Cicago'
+           gmaps_output = gmaps.geocode(target_name)
+           location_output = gmaps_output[0].get('geometry')
+           lat.append(location_output['location']['lat'])
+           lng.append(location_output['location']['lng'])
         
-    	else:
-        	lat.append(np.nan)
-        	lng.append(np.nan)
+       else:
+           lat.append(np.nan)
+           lng.append(np.nan)
    
         	
     df['lat'] = lat
