@@ -24,6 +24,7 @@
 
 
 * 오타 수정
+	* P36, In [32] : df.iloc[[1,2,4],[0,2]] --> **In [32] : df.iloc[[1,2,4],[0:2]]** (조힘찬빛님 감사합니다.)
 	* P38, In[40] df2['E'].isIn(['two','four']) --> **In[40] df2['E'].isin(['two','four'])** (focussjh님 감사합니다.)
 	* P40, In[44] x.mIn() --> **x.min()** (buillee님 감사합니다.)
 
@@ -33,6 +34,7 @@
 * 오타 수정
 	* P83, In[7]의 마지막 print문이 앞으로 들여쓰기가 되어야 합니다. 단, for문안에는 있어야 하구요. github 소스를 확인해 주세요. (pitbulls님 감사합니다.)
 	* P86, In [13] crime_anal_police.loc[crime_anal_police['관서명']=='금천서', ['구별']] = '금천서' --> **crime_anal_police.loc[crime_anal_police['관서명']=='금천서', ['구별']] = '금천구'** (grabchance님 감사합니다.)
+	* P87, In [15] ccrime_anal_police.head() --> **crime_anal_police.head()** (조힘찬빛님 감사합니다.)
 
 * 교재 대비 데이터나 환경이 변경된 사항
 	* 교재에서 접근하는 방식으로 데이터를 얻으로 가면 교재 집필하던 때와 데이터의 형식이 변경되어 있습니다.
@@ -50,9 +52,15 @@
 
 * 오타 수정
 	* P125, 밑에서 두 번째 줄, 02. test_first.html --> **03. test_first.html**
+	* P151, 첫 줄, 코드 [105]를 --> **코드 [51]을** (조힘찬빛님 감사합니다.)
 	* P159의 In[2]에 page = url_base+url_sub --> **page = urlopen(url_base+url_syb)** 로 변경되어야 합니다. (buillee님 감사합니다.)
 
 * 교재 오류 수정
+	* P144 In [41] 제일 위에 아래 코드가 추가되어야 합니다. (조힘찬빛님 감사합니다.)
+	``` python
+	from urllib.parse import urljoin 
+	```
+	
 	* P157 In[72]와 In[74] 사이에 df['lng'], df['lat']를 계산하는 코드가 교재에서 빠져있습니다. 소스코드를 참조해 주세요. 누락된 코드는 아래와 같습니다. (**이경재**님 감사합니다.)
 	
 	``` python
