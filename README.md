@@ -24,6 +24,7 @@
 
 
 * 오타 수정
+	* P34, In [26] 바로 위의 줄 df.loc[:, ['A', 'B']라고 --> **df.loc[:, ['A', 'B']]** (helpotcreator님 감사합니다.)
 	* P36, In [32] : df.iloc[[1,2,4],[0,2]] --> **In [32] : df.iloc[[1,2,4],[0:2]]** (조힘찬빛님 감사합니다.)
 	* P38, In[40] df2['E'].isIn(['two','four']) --> **In[40] df2['E'].isin(['two','four'])** (focussjh님 감사합니다.)
 	* P40, In[44] x.mIn() --> **x.min()** (buillee님 감사합니다.)
