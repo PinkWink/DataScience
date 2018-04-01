@@ -156,6 +156,21 @@
 		* 그 과정에서 실수로 교재에는 내용만 빠지고 소제목에는 들어가는 창피한 일이 생겼습니다.
 		* 충분한 검토를 거치지 못해 이 역시 죄송합니다. 이것도 역시 알려주신 **s199414**님께 감사드립니다. 
 		* 책에서는 소제목의 holiday가 있지만, 내용에는 없습니다. 그러나 holiday 설정이 궁금하신 분은 소스코드를 확인해 주시면 됩니다.
+
+* 중요 변경 부분 : Pandas 주식 데이터 오류
+	* 현재 구글이든 야후든 pandas의 주식 데이터를 읽어오는데 문제가 있습니다. 이미 github에서 꽤 issue가 되고 있는듯 하지만, 아직 해결방법이 있지는 않은듯 합니다.
+	* 최근 이 문제를 해결하기 위한 방법을 고민해주는 고마운 분들이 만들어준 모듈이 있습니다.
+	* 터미널에서 **pip install fix_yahoo_finance**로 fix_yahoo_finance를 설치하시고 아래와 같이 코드에서 사용하시면 됩니다.
+	
+	```python
+	from pandas_datareader import data
+	import fix_yahoo_finance as yf
+	yf.pdr_override()
+
+	start_date = '2010-03-01' 
+	end_date = '2018-02-28' 
+	KIA = data.get_data_yahoo('000270.KS', start_date, end_date)
+	```
 	
 * 내용수정
 	* 7-3절에서 pandas에서 구글(google)에서 주식데이터를 가져오는데 최근 버전업 이후 이 명령이 동작하지 않습니다.
