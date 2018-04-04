@@ -100,7 +100,9 @@
 
 
 * 오타 수정
+	* P175, 가장 마지막 줄, 메일(mail.naver.com] --> **메일(mail.naver.com)**  (광영님 감사합니다.)
 	* P178, webdriver.Chrome('../drvier/chromedriver')에서 윈도우 유저들께서는 chromedriver.exe로 맥 유저들은 그대로 chromedriver로 하시면 됩니다. (pitbulls님 감사합니다.)
+	* P178, In [11]의 두 번째 줄 driver.get("http://naver.com")의 주소는 github의 소스코드에 있는데로 수정되어야 합니다. **driver.get("http://www.opinet.co.kr/searRgSelect.do")** (광영님 감사합니다.)
 	* P198, 대체로 '중구','중랑구'에 비싼 주유소가 몰려 있고, --> **대체로 '중구','종로구'에 비싼 주유소가 몰려 있고**
 
 	
