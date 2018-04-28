@@ -28,6 +28,8 @@
 	* P36, In [32] : df.iloc[[1,2,4],[0,2]] --> **In [32] : df.iloc[[1,2,4],[0:2]]** (조힘찬빛님 감사합니다.)
 	* P38, In[40] df2['E'].isIn(['two','four']) --> **In[40] df2['E'].isin(['two','four'])** (focussjh님 감사합니다.)
 	* P40, In[44] x.mIn() --> **x.min()** (buillee님 감사합니다.)
+	* P54, 밑에서 세 번째 줄, 0.7 이하면 뚜렷한 상관관계 --> **0.7 이상이면 뚜렸한 상관관계** (김혁님 감사합니다.)
+	* P57, In [95] np.arrange --> **np.arange** (김혁님 감사합니다.)
 
 ### 2장 서울시 범죄 현황 분석
 * 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/02.%20Analysis%20for%20crime%20in%20Seoul.ipynb)**
