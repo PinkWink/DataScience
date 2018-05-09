@@ -35,9 +35,11 @@
 * 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/02.%20Analysis%20for%20crime%20in%20Seoul.ipynb)**
 
 * 오타 수정
+	* P79, 그림 2-7과 같이 --> **그림 2-9와 같이** (김혁님 감사합니다.)
 	* P83, In[7]의 마지막 print문이 앞으로 들여쓰기가 되어야 합니다. 단, for문안에는 있어야 하구요. github 소스를 확인해 주세요. (pitbulls님 감사합니다.)
 	* P86, In [13] crime_anal_police.loc[crime_anal_police['관서명']=='금천서', ['구별']] = '금천서' --> **crime_anal_police.loc[crime_anal_police['관서명']=='금천서', ['구별']] = '금천구'** (grabchance님 감사합니다.)
 	* P87, In [15] ccrime_anal_police.head() --> **crime_anal_police.head()** (조힘찬빛님 감사합니다.)
+	* P93, In [32]의 마지막 명령인 crime_anal.head() 명령은 앞으로 당겨야합니다. 즉, indent 적용이 안되어야 합니다. (김혁님 감사합니다.)
 
 * 교재 대비 데이터나 환경이 변경된 사항
 	* 교재에서 접근하는 방식으로 데이터를 얻으로 가면 교재 집필하던 때와 데이터의 형식이 변경되어 있습니다.
