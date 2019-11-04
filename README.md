@@ -188,6 +188,18 @@
 	* 그래서 yahoo에서 주식데이터를 가져오도록 수정되었습니다.
 	* 일부 **daily_seasonality=True**와 같이 **Prophet** 명령을 사용할때 옵션이 교재와 달리 추가된 곳이 있습니다. 소스코드를 확인해 주세요.
 
+* 제보(by Hwaseop Song)
+	* 아래 내용은 제 메일로 송화섭님께서 직접 보내주신 내용입니다. 다른 분들도 많은 제보를 주셨는데 대표적으로 송화섭님의 내용으로 대표합니다.
+	* 현재(19.10.30) 기준 fix_yahoo_finance가 설치되지 않는다고 하네요.
+	* pip install yfinance as yf 로 설치 후
+	```python
+	import finance as yf
+	```
+	* 사용하시면 된다고 합니다.
+	* 요즘 본 책의 내용이 쉽게 적용되지 않는 부분이 많아 어려움이 많으실 겁니다.
+	* 내용을 전반적으로 수정하는 작업을 해야하는데 쉽지가 않네요.ㅠㅠ.
+	* 다시 한 번 송화섭(Hwaseop Song)님께 감사합니다.
+
 ### 8장 자연어 처리 시작하기
 * 소스코드 : **[바로가기](https://github.com/PinkWink/DataScience/blob/master/source_code/08.%20Natural%20Language%20Processing.ipynb)**
 
