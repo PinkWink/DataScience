@@ -193,7 +193,7 @@
 	* 현재(19.10.30) 기준 fix_yahoo_finance가 설치되지 않는다고 하네요.
 	* pip install yfinance as yf 로 설치 후
 	```python
-	import finance as yf
+	import yfinance as yf
 	```
 	* 사용하시면 된다고 합니다.
 	* 요즘 본 책의 내용이 쉽게 적용되지 않는 부분이 많아 어려움이 많으실 겁니다.
